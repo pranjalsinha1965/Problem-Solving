@@ -1,11 +1,12 @@
-def find_common_elements(list1, list2):
-    common_elements = []
-    for item in list1: 
-        if item in list2: 
-            common_elements.append(item)
-    return common_elements 
+def count_frequency(numbers):
+    frequency = {}
+    for num in numbers: 
+        if num in frequency: 
+            frequency[num] += 1
+        else: 
+            frequency[num] = 1
+    return frequency 
 
-list_a = [1, 2, 3, 4, 5]
-list_b = [6, 7, 8, 9, 10]
-common = find_common_elements(list_a, list_b)
-print(common)
+nums = [1, 2, 3, 2, 1, 3, 2, 4, 5, 4]
+frequency_count = count_frequency(nums)
+print(frequency_count)
