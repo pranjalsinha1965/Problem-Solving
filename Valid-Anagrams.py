@@ -12,3 +12,7 @@ class Solutions:
                 return False
             charCount[ch] -= 1
         return True
+    
+    print(isAnagram(s))
+    print(isAnagram(t))
+    
