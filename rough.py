@@ -1,12 +1,16 @@
-def bubble_sort(elements): 
-    n = len(elements)
-    for i in range(n-1): 
-        for j in range(n - i - 1): 
-            if elements[j] > elements[j + 1]: 
-                elements[j], elements[j + 1] = elements[j + 1], elements[j]
+def isPalindrome(s: str) -> bool: 
+    i, j = 0, len(s) - 1
+    while i<j: 
+        if not s[i].isalnum():
+            i += 1
+        elif not s[j].isalnum(): 
+            j -= 1 
+        elif s[i].lower() != s[j].lower(): 
+            return False 
+        else: 
+            i, j = i + 1, j - 1
+    return True 
 
-nums = [5, 2, 8, 1, 9]
-bubble_sort(nums)
-print(nums)
-
-
+sentence = "My name is Pranjal Sinha"
+result = isPalindrome(sentence)
+print(f"{result}")
