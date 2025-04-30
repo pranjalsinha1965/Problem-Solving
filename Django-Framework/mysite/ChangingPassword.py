@@ -49,3 +49,4 @@
 # for user in User.objects.all():
 #     print(user.username)
 
+# Link: https://www.freecodecamp.org/news/how-to-change-the-password-of-a-superuser-in-django/
