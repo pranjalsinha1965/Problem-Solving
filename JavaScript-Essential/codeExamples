@@ -1,0 +1,110 @@
+// Types of Scope in JavaScript
+
+// Global Scope
+let globalScopeVariable = "I'm in the global scope";
+
+function logScope() {
+    console.log(globalScopeVariable);
+}
+logScope();
+
+for (let i = 0; i < 3; i++) {
+    console.log(globalScopeVariable);
+}
+
+if (true) {
+    console.log(globalScopeVariable);
+}
+
+console.log(globalScopeVariable); // "I'm in the global scope"
+
+// Function Scope
+function doubleNum() {
+    let num = 23;
+    console.log(num * 2);
+}
+doubleNum();
+// console.log(num); // ReferenceError: "num" is not defined
+
+// Closures
+function parentFunction() {
+    let x = 3;
+    function childFunction(y) {
+        return x + y;
+    }
+    return childFunction;
+}
+
+let res = parentFunction();
+console.log(res(4)); // Outputs: 7
+
+// Hoisting
+
+// Variable Hoisting with 'var'
+console.log(x); // undefined
+var x = 4;
+console.log(x); // 4
+
+// 'let' and 'const' are not hoisted like 'var'
+// console.log(y); // ReferenceError: Cannot access 'y' before initialization
+let y = 3;
+
+// Function Hoisting
+console.log(addNums(1, 3)); // 4
+
+function addNums(a, b) {
+    return a + b;
+}
+
+console.log(addNums(1, 3)); // 4
+
+// Function expressions are not hoisted
+// console.log(addNumsExpr(1, 3)); // ReferenceError
+// const addNumsExpr = function(a, b) {
+//     return a + b;
+// };
+
+// Class Hoisting
+// new Car(); // ReferenceError: Cannot access 'Car' before initialization
+class Car {
+    constructor() {
+        console.log("Car created");
+    }
+}
+
+// Import Hoisting - Invalid syntax if not using modules properly
+// This will throw SyntaxError if used outside a module
+// import statements must be at the top of the file
+// Correct way:
+// import f from './library/package';
+// const sum = f.add(2, 3);
+
+// Best Practices for Variable Declarations
+
+// 1. Keep scope as local as possible
+const num = 3;
+
+function addNum() {
+    return 2 + num;
+}
+
+function multiplyNum(a) {
+    return 3 * a;
+}
+
+// 2. we also need closures to protect the data
+function encapsulateData() {
+    const user = {
+        name: 'Chidera',
+        age: 23
+    };
+
+    return function updatedAge() {
+        user.age++;
+        return user.age;
+    };
+}
+
+const updateHandler = encapsulateData();
+const updatedAge = updateHandler(); // 24
+console.log(updatedAge); // 24
