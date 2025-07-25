@@ -219,7 +219,7 @@ These 15 questions helped me quickly revise the important patterns and build rea
 ### 🧠 𝐃𝐲𝐧𝐚𝐦𝐢𝐜 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠
  9. 🔹 [Coin Change II](https://lnkd.in/gHh4VYdU)
  10. 🔹 [Word Break II](https://lnkd.in/gifJtP37)
- 11. 🔹 Longest Palindromic Substring – https://lnkd.in/g-R59vcE
+ 11. 🔹 [Longest Palindromic Substring](https://lnkd.in/g-R59vcE)
 ### 🔄 𝐁𝐚𝐜𝐤𝐭𝐫𝐚𝐜𝐤𝐢𝐧𝐠
  12. 🔹 [Subsets II](https://lnkd.in/g87BjD2z)
  13. 🔹 [Palindrome Partitioning](https://lnkd.in/gYru9v7P)
