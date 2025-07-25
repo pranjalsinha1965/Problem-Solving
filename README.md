@@ -198,7 +198,7 @@ Happy exporting 🚀
 
 Goto List for starting coding: 
 
-## ✨ 𝟏𝟓 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐈 𝐑𝐞𝐩𝐞𝐚𝐭𝐞𝐝𝐥𝐲 𝐏𝐫𝐚𝐜𝐭𝐢𝐬𝐞𝐝 𝐁𝐞𝐟𝐨𝐫𝐞 𝐌𝐲 𝐏𝐁𝐂 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬 ✨
+## ✨ 𝟏𝟓 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 TO BE SOLVED REPEATEDLY ✨
 
 I’ve solved 2500+ coding problems across different platforms.
 But for PBC interviews, I focused on a small list that mattered most.
