@@ -195,3 +195,34 @@ Happy exporting 🚀
 21. Add Two Numbers - Leetcode 2
 22. Kth Element any in a stream - Leetcode 
 23. Validate Binary Search - Leetcode 98
+
+Goto List for starting coding: 
+
+## ✨ 𝟏𝟓 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐈 𝐑𝐞𝐩𝐞𝐚𝐭𝐞𝐝𝐥𝐲 𝐏𝐫𝐚𝐜𝐭𝐢𝐬𝐞𝐝 𝐁𝐞𝐟𝐨𝐫𝐞 𝐌𝐲 𝐏𝐁𝐂 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬 ✨
+
+I’ve solved 2500+ coding problems across different platforms.
+But for PBC interviews, I focused on a small list that mattered most.
+These 15 questions helped me quickly revise the important patterns and build real confidence.
+
+### 🔍 𝐒𝐨𝐫𝐭𝐢𝐧𝐠 & 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠
+🔹 [Search in Rotated Sorted Array](https://lnkd.in/gt8nYfs4)
+🔹 [Median of Two Sorted Arrays](https://lnkd.in/g7dV4DcJ)
+### 🪟 𝐒𝐥𝐢𝐝𝐢𝐧𝐠 𝐖𝐢𝐧𝐝𝐨𝐰
+ 3. 🔹 [Minimum Window Substring](https://lnkd.in/gQa2S4W6)
+ 4. 🔹 [Longest Repeating Character Replacement](https://lnkd.in/gaEeGNJD)
+### 📊 𝐏𝐫𝐞𝐟𝐢𝐱 𝐒𝐮𝐦
+ 5. 🔹 [Subarray Sum Equals K](https://lnkd.in/gKMvGjic)
+ 6. 🔹 [Range Sum Query - Immutable](https://lnkd.in/gyU-V6aB)
+### 🧵 𝐓𝐫𝐢𝐞𝐬
+ 7. 🔹 [Implement Trie (Prefix Tree)](https://lnkd.in/gJWPgMxW)
+ 8. 🔹 [Word Search II](https://lnkd.in/g9gPWmze)
+### 🧠 𝐃𝐲𝐧𝐚𝐦𝐢𝐜 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠
+ 9. 🔹 [Coin Change II](https://lnkd.in/gHh4VYdU)
+ 10. 🔹 [Word Break II](https://lnkd.in/gifJtP37)
+ 11. 🔹 Longest Palindromic Substring – https://lnkd.in/g-R59vcE
+### 🔄 𝐁𝐚𝐜𝐤𝐭𝐫𝐚𝐜𝐤𝐢𝐧𝐠
+ 12. 🔹 [Subsets II](https://lnkd.in/g87BjD2z)
+ 13. 🔹 [Palindrome Partitioning](https://lnkd.in/gYru9v7P)
+### 🌐 𝐆𝐫𝐚𝐩𝐡𝐬
+ 14. 🔹 [Course Schedule II](https://lnkd.in/gjv_ijdk)
+ 15. 🔹 [Word Ladder II](https://lnkd.in/gBTgDYjH)
