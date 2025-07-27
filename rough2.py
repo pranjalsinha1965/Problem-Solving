@@ -1,112 +1,268 @@
-def isPalindrome(s: str) -> bool: 
-    i, j = 0, len(s) - 1
-    while i < j: 
-        if not s[i].isalnum(): 
-            i += 1
-        elif not s[j].isalnum(): 
-            j -= 1
-        elif s[i].lower() != s[j].lower(): 
-            return False
-        else: 
-            i += 1
-            j -= 1
-    return True 
+from typing import List
+# Corrected function without 'self'
+def maxProfit(prices: List[int]) -> int: 
+    profit = 0
+    buy = prices[0]
 
-sentence = "My name is Pranjal"
-result = isPalindrome(sentence)
-print(f"is The resntece '{sentence}' a palindrome ? {result}")
+    for p in prices: 
+        buy = min(buy, p)
+        profit = max(profit, p - buy)
+    return profit 
 
-def factorial(n :int): 
-    if n == 0:
-        return 1
-    else: 
-        return n * factorial(n - 1)
+prices = [7, 1, 5, 3, 6, 4]  # Example input
+result = maxProfit(prices)
+print(f"Maximum Profit: {result}")
 
-number = 2
-result = factorial(number)
-print(f"The factorial of {number} is {result}")
+def search(nums: List[int], target: int) -> int:  
+    l, r = 0, len(nums) - 1 
+    while l <= r:  
+        i = l + (r - l) // 2  # Calculate the middle index
+        n = nums[i]  # Get the middle element
+        if target > n:  
+            l = i + 1
+        elif target < n:  
+            r = i - 1
+        else:    
+            return i 
+    return -1  
 
-def find_largest(number): 
-    largest = number[0]
-    for num in number: 
-        if num > largest: 
-            largest = num
-    return largest 
+nums = [-1, 0, 3, 5, 9, 12]
+target = 9
 
-nums = [10, 5, 20, 3, 8]
-largest_num = find_largest(nums)
-print(f"The largest number in {nums} is {largest_num}")
+result = search(nums, target)
+print(result)  
 
-def reverse(s): 
-    if len(s) == 0:
-        return s
-    else: 
-        return reverse(s[1:]) + s[0]
+from typing import List
 
-s = "geekforgeeks"
-print("The original string is: ", end = "")
-print(s)
+def maxArea(heights: List[int]) -> int:
+    l, r = 0, len(heights) - 1 
+    res = 0  # Initialize the result variable
+    while l < r:
+        res = max(res, min(heights[l], heights[r]) * (r - l))
+        if heights[l] < heights[r]:
+            l += 1
+        else:
+            r -= 1
+            
+    return res
 
-def reverse(string): 
-    string = "".join(reversed(string))
-    return string 
+heights = [1,8,6,2,5,4,8,3,7]
+print(maxArea(heights)) 
 
-s = "geekforgeeks"
-print("The original string is: " + s)
-print("The reversed string is: " + reverse(s))
+from typing import List
 
-def reverse(string): 
-    string = reversed(string)
-    string.reverse()
-    return "".join(string)
-s = "geekforgeeks"
-print("The original string is: " + s)
-print("The reversed string is: " + reverse(s))
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]: 
+        l, r = 0, len(numbers) - 1 
+        
+        while l < r:
+            curSum = numbers[l] + numbers[r]  # Calculate current sum
+            
+            if curSum > target:
+                r -= 1  
+            elif curSum < target:
+                l += 1  
+            else:
+                return [l + 1, r + 1]  
+        return [] 
+    
+nums = [2, 3, 4, 5]
+result = 8
 
-from functools import reduce
-string = "geekforgeeks"
-reversed_str = reduce(lambda x, y: y+x, string)
-print("The original string is: " + string)
-print("reversed string is: " + reversed_str)
+my_solution = Solution()
+answer = my_solution.twoSum(nums, result)
 
-def count_frequency(numbers): 
-    frequency = {}
-    for num in numbers: 
-        if num in frequency: 
-            frequency[num] += 1
-        else: 
-            frequency[num] -= 1
-    return frequency 
+print(f"Given list of numbers is {nums}")
+print(f"The target result is {result}")
+print(f"Thus, the answer is {answer}")  
 
+# Combination Sum - Backtracking
+from typing import List 
 
-nums = [1, 2, 3, 2, 1, 4, 5, 4]
-frequency_count = count_frequency(nums)
-print(f"The frequency count of numbers in {nums} is {count_frequency}")
+class Solution: 
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]: 
+        res = []
+        
+        def dfs(i, cur, total): 
+            if total == target: 
+                res.append(cur.copy())
+                return
+            if i >= len(candidates) or total > target: 
+                return 
+            cur.append(candidates[i])
+            dfs(i, cur, total + candidates[i])
+            cur.pop()
+            dfs(i + 1, cur, total)
+        
+        dfs(0, [], 0)
+        return res 
 
-def is_prime(number): 
-    if number < 2: 
-        False 
-    for i in range(2, int(number**0.5) + 1): 
-        if number % i == 0:
-            return False 
-    return True 
+my_solution = Solution()
+candidates = [2, 3, 6, 7]
+target = 7
+print(my_solution.combinationSum(candidates, target))
 
-num = 17 
-if is_prime(num): 
-    print(f"{num} is prime number")
-else: 
-    print(f"{num} is not a prime number")
+# climbstairs solution
+# Done 
+class Solution: 
+    def climbStairs(self, n: int) -> int: 
+        one, two = 1, 1
+        for i in range(n - 1): 
+            temp = one 
+            one = one + two 
+            two = temp 
+        return one  # Return 'one' instead of 'two' to get correct result
+    
+my_solution = Solution()
+n = 5
+print(my_solution.climbStairs(n))  # Output: 8
 
-def find_common_elements(list1, list2): 
-    common_elements = []
-    for item in list1: 
-        if item in list2: 
-            common_elements.append(item)
-    return common_elements.append(item)
-list_a = [1, 2, 3, 4, 5]
-list_b = [4, 5, 6, 7, 8]
-common = find_common_elements(list_a, list_b)
-print(common)
+## Coin Change: Greedy ? [1, 3, 4, 5] Amount 
+# for this use DFS Backtracking 
+# [1, 3, 4, 5] Amount = 7
 
+from typing import List
 
+class Solution:
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        # To store the minimum number of coins
+        self.result = float('inf')
 
+        def dfs(remaining_amount, count):
+            if remaining_amount == 0:
+                self.result = min(self.result, count)
+                return
+            if remaining_amount < 0:
+                return
+            for coin in coins:
+                dfs(remaining_amount - coin, count + 1)
+        dfs(amount, 0)
+        return self.result if self.result != float('inf') else -1
+
+# Example test case:
+coins = [1, 3, 4, 5]
+amount = 7
+my_solution = Solution()
+print(my_solution.coinChange(coins, amount))  # Output: 2 (3+4 or 4+3)
+
+## Longest Increasing Subsequence 
+## 1st step: Brute - Force - DFS 
+## 2nd step: DFS - With Code 
+## [1, 2, 4, 3]
+# Done 
+from typing import List
+
+class Solution: 
+    def lengthOfLIS(self, nums: List[int]) -> int: 
+        LIS = [1] * len(nums)
+        
+        # Traverse the list from right to left
+        for i in range(len(nums) - 1, -1, -1): 
+            for j in range(i + 1, len(nums)): 
+                if nums[i] < nums[j]:  # If a smaller element is found at the right of nums[i]
+                    LIS[i] = max(LIS[i], 1 + LIS[j])  # Update LIS at i
+        return max(LIS)
+
+# Example usage
+nums = [1, 2, 4, 3]
+result = Solution().lengthOfLIS(nums)
+print(f"The length of the longest increasing subsequence is: {result}")  # Expected output: 3
+
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        # Initialize the DP table with zeros
+        dp = [[0 for _ in range(len(text2) + 1)] for _ in range(len(text1) + 1)]
+        
+        # Fill the DP table from the bottom-right corner
+        for i in range(len(text1) - 1, -1, -1):
+            for j in range(len(text2) - 1, -1, -1):
+                if text1[i] == text2[j]:
+                    dp[i][j] = 1 + dp[i + 1][j + 1]
+                else:
+                    dp[i][j] = max(dp[i][j + 1], dp[i + 1][j])
+        
+        # The result is in the top-left cell of the DP table
+        return dp[0][0]
+
+# Example usage:
+solution = Solution()
+text1 = "abcde"
+text2 = "ace"
+result = solution.longestCommonSubsequence(text1, text2)
+print(result)  # Output: 3
+
+from typing import List
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        dp = [False] * (len(s) + 1)
+        dp[len(s)] = True
+        for i in range(len(s) - 1, -1, -1):
+            for w in wordDict:
+                if (i + len(w)) <= len(s) and s[i:i + len(w)] == w:
+                    dp[i] = dp[i + len(w)]
+                if dp[i]:
+                    break  # Break if a valid word is found for dp[i]
+        return dp[0]
+
+# Test cases
+sol = Solution()
+# Test case 1
+s = "leetcode"
+wordDict = ["leet", "code"]
+print(sol.wordBreak(s, wordDict))  # Expected: True
+# Test case 2
+s = "applepenapple"
+wordDict = ["apple", "pen"]
+print(sol.wordBreak(s, wordDict))  # Expected: True
+# Test case 3
+s = "catsandog"
+wordDict = ["cats", "dog", "sand", "and", "cat"]
+print(sol.wordBreak(s, wordDict))  # Expected: False
+
+## House Robber - Leetcode 198 - Python Dynamic Programming
+# Done 
+class Solution: 
+    def rob(self, nums: List[int]) -> int: 
+        rob1, rob2 = 0, 0
+        for n in nums: 
+            temp = max(n + rob1, rob2)
+            rob1 = rob2 
+            rob2 = temp 
+        return rob2 
+    
+class Solution: 
+    def rob(self, nums: List[int]) ->int: 
+        return max(nums[0], self.helper(nums[1:]), self.helper(nums[:-1]))
+        
+    def helper(self, nums): 
+        rob1, rob2 = 0, 0
+        for n in nums: 
+            newRob = max(rob1 + n, rob2)
+            rob1 = rob2 
+            rob2 = newRob 
+        
+        return rob2 
+    
+## Unique Paths - Dynamic Programming - Leetcode 62
+# Done 
+class Solution: 
+    def uniquePaths(self, m: int, n: int) -> int: 
+        row = [1] * n
+        for i in range(m - 1):
+            newRow = [1] * n
+            for j in range(n - 2, -1, -1): 
+                newRow[j] = newRow[j + 1] + row[j]
+            row = newRow
+        return row 
+    
+## Jump Game - DP - Greedy - Leetcode 55
+# Done 
+class Solution: 
+    def canJump(self, nums: List[int]) ->bool: 
+        goal = len(nums) - 1 
+        for i in range(len(nums) -1, -1, -1): 
+            if i + nums[i] >= goal: 
+                goal = i 
+        
+        return True if goal == 0 else False 
