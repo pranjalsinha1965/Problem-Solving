@@ -159,6 +159,7 @@ nums = [1, 2, 3, 2, 1, 3, 2, 4, 5, 4]
 unique_nums = remove_duplicates(nums)
 print(f"{unique_nums}")
 
+#one 
 class Solution: 
     def uniquePaths(self, m: int, n: int) -> int: 
         row = [1] * n
@@ -168,7 +169,8 @@ class Solution:
                 newRow[j] = newRow[j + 1] + row[j]
             row = newRow
         return row 
-    
+
+#two
 class Solution: 
     def canJump(self, nums: List[int]) ->bool: 
         goal = len(nums) - 1 
@@ -177,7 +179,8 @@ class Solution:
                 goal = i 
         
         return True if goal == 0 else False 
-    
+
+#three    
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -192,7 +195,8 @@ class Solution:
             if slow == fast:
                 return True
         return False
-    
+
+#four
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -207,6 +211,7 @@ class Solution:
         head.next = None
         return newHead
 
+#five
 class Solution: 
     def lengthOfLIS(self, nums: List[int]) -> int: 
         LIS = [1] * len(nums)
