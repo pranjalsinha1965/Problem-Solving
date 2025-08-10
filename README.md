@@ -226,3 +226,26 @@ These 15 questions helped me quickly revise the important patterns and build rea
 ### 🌐 𝐆𝐫𝐚𝐩𝐡𝐬
  14. 🔹 [Course Schedule II](https://lnkd.in/gjv_ijdk)
  15. 🔹 [Word Ladder II](https://lnkd.in/gBTgDYjH)
+
+ ## 🔝 𝐌𝐮𝐬𝐭-𝐃𝐨 𝐒𝐥𝐢𝐝𝐢𝐧𝐠 𝐖𝐢𝐧𝐝𝐨𝐰 𝐏𝐫𝐨𝐛𝐥𝐞𝐦𝐬 𝐟𝐨𝐫 𝐏𝐁𝐂 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬 🚪➡️
+
+### 🟢🟢🟢🟢 𝐄𝐚𝐬𝐲 🟢🟢🟢🟢
+ 1. 💰 [𝐌𝐚𝐱𝐢𝐦𝐮𝐦 𝐀𝐯𝐞𝐫𝐚𝐠𝐞 𝐒𝐮𝐛𝐚𝐫𝐫𝐚𝐲 𝐈].(https://lnkd.in/gb92FXT7)
+ 2. 💰 [𝐌𝐚𝐱𝐢𝐦𝐮𝐦 𝐒𝐮𝐦 𝐒𝐮𝐛𝐚𝐫𝐫𝐚𝐲 𝐨𝐟 𝐒𝐢𝐳𝐞 𝐊.(https://lnkd.in/g_nJNtHJ)
+ 3. 💰 [𝐂𝐡𝐞𝐜𝐤 𝐈𝐟 𝐀𝐥𝐥 𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬 𝐇𝐚𝐯𝐞 𝐄𝐪𝐮𝐚𝐥 𝐍𝐮𝐦𝐛𝐞𝐫 𝐨𝐟 𝐎𝐜𝐜𝐮𝐫𝐫𝐞𝐧𝐜𝐞𝐬].(https://lnkd.in/ghrU5UuJ)
+4. 💰 [𝐍𝐮𝐦𝐛𝐞𝐫 𝐨𝐟 𝐒𝐮𝐛𝐬𝐭𝐫𝐢𝐧𝐠𝐬 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐢𝐧𝐠 𝐀𝐥𝐥 𝐓𝐡𝐫𝐞𝐞 𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬].(https://lnkd.in/gZd7s2mC)
+
+### 🟡🟡🟡🟡 𝐌𝐞𝐝𝐢𝐮𝐦 🟡🟡🟡🟡
+1. 💰 [𝐋𝐨𝐧𝐠𝐞𝐬𝐭 𝐒𝐮𝐛𝐬𝐭𝐫𝐢𝐧𝐠 𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐑𝐞𝐩𝐞𝐚𝐭𝐢𝐧𝐠 𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬].(https://lnkd.in/gty3gwAG)
+2. 💰 [𝐌𝐢𝐧𝐢𝐦𝐮𝐦 𝐒𝐢𝐳𝐞 𝐒𝐮𝐛𝐚𝐫𝐫𝐚𝐲 𝐒𝐮𝐦].(https://lnkd.in/gdCgGpUV)
+3. 💰 [𝐅𝐫𝐮𝐢𝐭𝐬 𝐢𝐧𝐭𝐨 𝐁𝐚𝐬𝐤𝐞𝐭𝐬].(https://lnkd.in/ge6NFV3Q)
+4. 💰 [𝐏𝐞𝐫𝐦𝐮𝐭𝐚𝐭𝐢𝐨𝐧 𝐢𝐧 𝐒𝐭𝐫𝐢𝐧𝐠].(https://lnkd.in/gqGJwztv)
+5. 💰 [𝐅𝐢𝐧𝐝 𝐀𝐥𝐥 𝐀𝐧𝐚𝐠𝐫𝐚𝐦𝐬 𝐢𝐧 𝐚 𝐒𝐭𝐫𝐢𝐧𝐠].(https://lnkd.in/gdhc4Pcb)
+6. 💰 [𝐂𝐨𝐮𝐧𝐭 𝐍𝐮𝐦𝐛𝐞𝐫 𝐨𝐟 𝐍𝐢𝐜𝐞 𝐒𝐮𝐛𝐚𝐫𝐫𝐚𝐲𝐬].(https://lnkd.in/g2Kyz7tj)
+7. 💰 [𝐒𝐮𝐛𝐚𝐫𝐫𝐚𝐲𝐬 𝐖𝐢𝐭𝐡 𝐊 𝐃𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐭 𝐈𝐧𝐭𝐞𝐠𝐞𝐫𝐬].(https://lnkd.in/gc88JhBz)
+
+### 🔴🔴🔴🔴 𝐇𝐚𝐫𝐝 🔴🔴🔴🔴
+1. 💰 [𝐒𝐥𝐢𝐝𝐢𝐧𝐠 𝐖𝐢𝐧𝐝𝐨𝐰 𝐌𝐚𝐱𝐢𝐦𝐮𝐦].(https://lnkd.in/gHv3i76F)
+2. 💰 [𝐌𝐢𝐧𝐢𝐦𝐮𝐦 𝐖𝐢𝐧𝐝𝐨𝐰 𝐒𝐮𝐛𝐬𝐭𝐫𝐢𝐧𝐠].(https://lnkd.in/gQa2S4W6)
+3. 💰 [𝐂𝐨𝐮𝐧𝐭 𝐨𝐟 𝐒𝐦𝐚𝐥𝐥𝐞𝐫 𝐍𝐮𝐦𝐛𝐞𝐫𝐬 𝐀𝐟𝐭𝐞𝐫 𝐒𝐞𝐥𝐟].(https://lnkd.in/ggdVayFY)
+4. 💰 [𝐌𝐚𝐱𝐢𝐦𝐢𝐳𝐞 𝐒𝐜𝐨𝐫𝐞 𝐨𝐟 𝐚 𝐆𝐨𝐨𝐝 𝐒𝐮𝐛𝐚𝐫𝐫𝐚𝐲].(https://lnkd.in/gDwJ93WU)
