@@ -1,38 +1,4 @@
 from typing import List
-# Corrected function without 'self'
-def maxProfit(prices: List[int]) -> int: 
-    profit = 0
-    buy = prices[0]
-
-    for p in prices: 
-        buy = min(buy, p)
-        profit = max(profit, p - buy)
-    return profit 
-
-prices = [7, 1, 5, 3, 6, 4]  # Example input
-result = maxProfit(prices)
-print(f"Maximum Profit: {result}")
-
-def search(nums: List[int], target: int) -> int:  
-    l, r = 0, len(nums) - 1 
-    while l <= r:  
-        i = l + (r - l) // 2  # Calculate the middle index
-        n = nums[i]  # Get the middle element
-        if target > n:  
-            l = i + 1
-        elif target < n:  
-            r = i - 1
-        else:    
-            return i 
-    return -1  
-
-nums = [-1, 0, 3, 5, 9, 12]
-target = 9
-
-result = search(nums, target)
-print(result)  
-
-from typing import List
 
 def maxArea(heights: List[int]) -> int:
     l, r = 0, len(heights) - 1 
@@ -380,34 +346,3 @@ class Solution:
             r += 1
         return res 
     
-def find_common_elements(list1, list2):
-    common_elements = []
-    for item in list1:
-        if item in list2:
-            common_elements.append(item) 
-    return common_elements 
-
-def bubble_sort(elements):
-    n = len(elements)
-    for i in range(n - 1):
-        for j in range(n - i - 1):
-            if elements[j] > elements[j + 1]:
-                elements[j], elements[j + 1] = elements[j + 1], elements[j]
-
-def find_second_largest(numbers):
-    largest = float('-inf')
-    second_largest = float('-inf')
-    for num in numbers:
-        if num > largest:
-            second_largest = largest
-            largest = num
-        elif num > second_largest and num != largest:
-            second_largest = num
-    return second_largest
-
-def remove_duplicates(numbers):
-    unique_numbers = []
-    for num in numbers:
-        if num not in unique_numbers:
-            unique_numbers.append(num)
-    return unique_numbers
