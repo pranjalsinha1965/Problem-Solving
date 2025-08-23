@@ -5,7 +5,7 @@ class Solution:
             temp = one 
             one = one + two 
             two = temp 
-        return one  # Return 'one' instead of 'two' to get correct result
+        return two  # Return 'one' instead of 'two' to get correct result
     
 my_solution = Solution()
 n = 5
@@ -20,7 +20,6 @@ def maxArea(heights: List[int]) -> int:
             l += 1
         else:
             r -= 1
-            
     return res
 
 heights = [1,8,6,2,5,4,8,3,7]
@@ -103,7 +102,7 @@ class Solution:
 #five
 class Solution: 
     def lengthOfLIS(self, nums: List[int]) -> int: 
-        LIS = [1] * len(nums)
+        LIS = [1] * len(nums) 
         
         # Traverse the list from right to left
         for i in range(len(nums) - 1, -1, -1): 
