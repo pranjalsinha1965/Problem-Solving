@@ -1,0 +1,82 @@
+Full Marks: 70                                  Date: 26th August, 2024 
+Basic-Algo 
+1. Palindromic string(Done)
+2. Palindromic string 2-pointer approach(Done)
+3. Factorial(Done)
+4. Largest Element(Done)
+5. Reversing String (10 Methods : 
+    a. using 2 - pointer approach,(Done)
+    b. Loops, (Done)
+    c. slicing and indexing, (Done)
+    d. using methods, (Done)
+    e. list comprehension, (Done)
+    f. using methods, (Done)
+    g. slicing, (Done)
+    h. using built in libraries) (Done)
+6. count frequency of each element in a list (Done)
+7. is prime function (Done)
+8. common elements of a list  (Done)
+9. bubble sort (Done)
+10. second largest element in a list (Done)
+11. largest characters of a string (Done)
+12. smallest character of a string (Done)
+13. frequency of characters in a string (Done)
+
+Test-1 
+1. Best time to buy and sell (Done)
+2. Binary Search (Done)
+3. Happy Number (Done)
+4. Container With most water (Done)
+5. two sum (Done)
+6. ClimbStairs Solution (Done)
+7. House Robber - I (Done)
+8. House Robber - II (Done)
+9. Unique Paths(Done)
+10. Jump Game (Done)
+11. Lemonade Change (Done)
+12. Cycle Detection(Done)
+13. Linked List Reversal(Done) 
+14. Length of Linked List 
+15. Merge Linked List 
+
+Basic-DSA
+
+Final - Test 
+
+1. Write a program to calculate the sum of all elements in an integer array
+2. Find the largest and smallest element in an array of integer
+3. Calculate the average of elements in an integer array
+4. Write a program to reverse the elements of an array
+5. Write a program to copy the contents of one array into another
+6. Remove duplicates from an array and return a new array without duplicates.
+7. Calculate the frequency of each element in an array
+8. Separate even and odd numbers into two separate arrays from a given array
+9. Implement a function to search for an element in an array and return its index if found 
+10. Write a program to find the length of a string (excluding the null character). 
+11. Write a program to concatenate two strings. 
+12. Compare two strings and determine if they are equal  
+13. Reverse a string (e.g., "hello" becomes "olleh").
+14. Count the number of vowels and consonants in a string 
+15. Count the number of words in a sentence (separated by spaces).  
+16. Parse a string containing numbers and mathematical operators to evaluate the expression (e.g., "2 + 3 * 4").
+17. Print the elements of an integer array using pointers
+18. Implement a function that swaps the values of two integers using pointers.
+19. Use malloc to allocate memory for an integer, assign a value to it, and then free the memory.
+20. Write a function that accepts a pointer to an integer and modifies the value it points to 
+21. Write a function that finds the maximum element in an integer array using pointers. 
+22. Reverse a string in-place using pointers 
+23. Implement a function to copy one string to another using pointers.
+24. Calculate the length of a string using a pointer.
+25. Create a dynamic array of integers using pointers and allow the user to enter values. 
+26. Write a recursive function to calculate the factorial of a positive integer.
+27. Implement a recursive function to generate the nth Fibonacci number. 
+28. Calculate the sum of the first n natural numbers using recursion. 
+29. Write a recursive function to compute the result of raising a number to a given power.
+30. Write a recursive function to print all numbers between two given integers 
+31. Print all permutations of a string using recursion.
+32. Write a recursive function to print the elements of an array in reverse order. 
+33. Calculate the sum of elements in an integer array using recursion. 
+34. Calculate the factorial of large numbers using recursion and an array. 
+35. Reverse a string using recursion. 
+
+Basic Algo + Test-1 + Basic-DSA + Final-Test

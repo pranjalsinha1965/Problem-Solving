@@ -207,7 +207,6 @@ class Solution:
             newRob = max(rob1 + n, rob2)
             rob1 = rob2 
             rob2 = newRob 
-        
         return rob2 
     
 ## Unique Paths - Dynamic Programming - Leetcode 62
