@@ -5,7 +5,7 @@ class Solution:
             temp = one 
             one = one + two 
             two = temp 
-        return two  # Return 'one' instead of 'two' to get correct result
+        return two  # Return 'one'  instead of 'two' to get correct result
     
 my_solution = Solution()
 n = 5
