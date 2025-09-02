@@ -25,7 +25,9 @@ def maxArea(heights: List[int]) -> int:
 heights = [1,8,6,2,5,4,8,3,7]
 print(maxArea(heights)) 
 
-class Solution: 
+from typing import List 
+
+class SolutionI:   # House Robber I
     def rob(self, nums: List[int]) -> int: 
         rob1, rob2 = 0, 0
         for n in nums: 
@@ -33,19 +35,22 @@ class Solution:
             rob1 = rob2 
             rob2 = temp 
         return rob2 
+
+
+class SolutionII:  # House Robber II
+    def rob(self, nums: List[int]) -> int: 
+        if len(nums) == 1:
+            return nums[0]
+        return max(self.helper(nums[1:]), self.helper(nums[:-1]))
     
-class Solution: 
-    def rob(self, nums: List[int]) ->int: 
-        return max(nums[0], self.helper(nums[1:]), self.helper(nums[:-1]))
-        
-    def helper(self, nums): 
-        rob1, rob2 = 0, 0
+    def helper(self, nums: List[int]) -> int: 
+        rob1, rob2 = 0, 0 
         for n in nums: 
-            newRob = max(rob1 + n, rob2)
+            temp = max(n + rob1, rob2)
             rob1 = rob2 
-            rob2 = newRob 
-        
+            rob2 = temp 
         return rob2 
+
 
 #one 
 class Solution: 
