@@ -23,31 +23,41 @@ Basic-Algo
 13. frequency of characters in a string (Done)
 
 Test-1 
-# Climbing Stairs → LeetCode 70: Climbing Stairs
-# Container With Most Water → LeetCode 11: Container With Most Water
-# House Robber → LeetCode 198: House Robber
-# House Robber II → LeetCode 213: House Robber II
-# Unique Paths → LeetCode 62: Unique Paths
-# Jump Game → LeetCode 55: Jump Game
-# Cycle Detection → LeetCode 141: Linked List Cycle
-# Linked List Reversal → LeetCode 206: Reverse Linked List
-# Length of LIS → LeetCode 300: Longest Increasing Subsequence
-# Merge Intervals → LeetCode 56: Merge Intervals
-# Two Sum → LeetCode 1: Two Sum
-# Combination Sum → LeetCode 39: Combination Sum
-# Coin Change → LeetCode 322: Coin Change
-# Longest Common Subsequence → LeetCode 1143: Longest Common Subsequence
-# Word Break → LeetCode 139: Word Break
-# Remove Nth Node From End of List → LeetCode 19: Remove Nth Node From End of List
-# Longest Substring Without Repeating Characters → LeetCode 3: Longest Substring Without Repeating Characters
-# Longest Repeating Character Replacement → LeetCode 424: Longest Repeating Character Replacement
-# Palindromic Substrings → LeetCode 647: Palindromic Substrings
-# Best Time to Buy and Sell Stock → LeetCode 121: Best Time to Buy and Sell Stock
-# Binary Search → LeetCode 704: Binary Search
-# Happy Number → LeetCode 202: Happy Number
-# Lemonade Change → LeetCode 860: Lemonade Change
-# Length of Linked List (not an official LeetCode, but a classic basic Linked List problem, often appears as utility in interviews).
-# Merge Two Sorted Lists → LeetCode 21: Merge Two Sorted Lists
+1. Arrays & Two Pointers
+Two Sum → LeetCode 1
+Container With Most Water → LeetCode 11
+Best Time to Buy and Sell Stock → LeetCode 121
+Jump Game → LeetCode 55
+Merge Intervals → LeetCode 56
+Lemonade Change → LeetCode 860
+
+2. Binary Search
+Binary Search → LeetCode 704
+
+3. Linked List
+Cycle Detection → LeetCode 141
+Linked List Reversal → LeetCode 206
+Remove Nth Node From End of List → LeetCode 19
+Length of Linked List → (not a direct LC problem, but foundational)
+
+4. Dynamic Programming
+Climbing Stairs → LeetCode 70
+House Robber → LeetCode 198
+House Robber II → LeetCode 213
+Unique Paths → LeetCode 62
+Coin Change → LeetCode 322
+Combination Sum → LeetCode 39
+Longest Increasing Subsequence (LIS) → LeetCode 300
+Longest Common Subsequence → LeetCode 1143
+Word Break → LeetCode 139
+
+5. Strings & Substrings
+Longest Substring Without Repeating Characters → LeetCode 3
+Longest Repeating Character Replacement → LeetCode 424
+Palindromic Substrings → LeetCode 647
+
+6. Math / Number Theory
+Happy Number → LeetCode 202
 
 Basic-DSA
 
