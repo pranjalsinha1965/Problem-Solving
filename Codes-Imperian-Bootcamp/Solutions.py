@@ -52,6 +52,110 @@ prices = [7, 1, 5, 3, 6, 4]
 result = maxProfit(prices)
 print(f"Maximum Profit: {result}")
 
+## Clone Graph - Depth First Search - Leetcode 133
+class Node:
+    def __init__(self, val=0, neighbours=None):
+        self.val = val
+        self.neighbours = neighbours if neighbours is not None else []
+
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node:
+            return None
+        oldToNew = {}
+        def dfs(node):
+            if node in oldToNew:
+                return oldToNew[node]
+            copy = Node(node.val)
+            oldToNew[node] = copy
+            for nei in node.neighbours:
+                copy.neighbours.append(dfs(nei))
+            return copy
+        return dfs(node)
+
+# Rotate Image - Matrix - Leetcode 48
+# two types of brute force optimizations with time complexities
+# (i) O(n^2)
+# (ii) O(1) (having the best edge case)
+
+from typing import List 
+class Solution: 
+    def rotateImage(self, matrix: List[List[int]]) -> None: 
+        l, r = 0, len(matrix) - 1
+        while l < r: 
+            for i in range(r - l): 
+                top, bottom = l, r
+                topLeft = matrix[top][l + i]
+                matrix[top][l + i] = matrix[bottom - i][l]
+                matrix[bottom - i][l] = matrix[bottom][r - i]
+                matrix[bottom][r - i] = matrix[top + i][r]
+                matrix[top + i][r] = topLeft
+            l += 1
+            r -= 1
+matrix = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9]
+]
+Solution().rotateImage(matrix)
+print(matrix)
+
+# Valid Anagram - Leetcode 242 - Python
+# type:ignore 
+class Solutions: 
+    def isAnagram(self, s, t) -> bool: 
+        return sorted(s) == sorted(t)
+        
+        return Counter(s) == Counter(t)
+        
+        if len(s) != len(t): 
+            return False 
+        countS, countT = {}, {}
+        
+        for i in range(len(s)): 
+            countS[s[i]] = 1 + countS.get(s[i], 0)
+            countT[t[i]] = 1 + countT.get(t[i], 0)
+        for c in countS: 
+            if countS[c] != countT.get(c, 0):
+                return False
+            
+        return True 
+
+# Group Anagrams - Categorize Strings by Count - Leetcode 49
+# type:ignore
+from typing import List
+from collections import defaultdict 
+class Solution: 
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]: 
+        res = defaultdict(List) # mapping charCount to List of Anagrams 
+        for s in strs: 
+            count = [0] * 26 
+            
+        for c in s: 
+            count[ord(c) - ord("a")] += 1
+        
+        res[tuple(count)].append(s)
+        return res.values()
+
+# Valid Parentheses - Stack - Leetcode 20 - Python 
+# Done 
+# type:ignore
+class Solution: 
+    def isValid(self, s: str) -> bool: 
+        stack = []
+        closeToOpen = { ")" : "(", "}" : "{", "[" : "]"}
+        
+        for c in s: 
+            if c in closeToOpen: 
+                if stack and stack[-1] == closeToOpen[c]:
+                    stack.pop()
+                else: 
+                    return False 
+            else: 
+                stack.append(c)
+                
+        return True if not stack else False 
+    
 def canJump(self, nums: List[int]) -> int: 
     goal = len(nums) - 1
     for i in range(len(nums) - 1, -1, -1):
