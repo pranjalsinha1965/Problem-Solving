@@ -17,7 +17,6 @@ class Solution:
     
 nums = [2, 3, 4, 5]
 result = 8
-
 my_solution = Solution()
 answer = my_solution.twoSum(nums, result)
 
@@ -102,24 +101,34 @@ print(matrix)
 
 # Valid Anagram - Leetcode 242 - Python
 # type:ignore 
-class Solutions: 
-    def isAnagram(self, s, t) -> bool: 
+# Valid Anagram - LeetCode 242
+
+from collections import Counter
+
+class Solution: 
+    # Approach 1: Sorting
+    def isAnagram_sorting(self, s: str, t: str) -> bool:
         return sorted(s) == sorted(t)
-        
+
+    # Approach 2: Counter (hashmap)
+    def isAnagram_counter(self, s: str, t: str) -> bool:
         return Counter(s) == Counter(t)
-        
+
+    # Approach 3: Manual Hashmap
+    def isAnagram_manual(self, s: str, t: str) -> bool:
         if len(s) != len(t): 
             return False 
-        countS, countT = {}, {}
         
+        countS, countT = {}, {}
         for i in range(len(s)): 
             countS[s[i]] = 1 + countS.get(s[i], 0)
             countT[t[i]] = 1 + countT.get(t[i], 0)
+        
         for c in countS: 
             if countS[c] != countT.get(c, 0):
                 return False
-            
-        return True 
+        return True
+
 
 # Group Anagrams - Categorize Strings by Count - Leetcode 49
 # type:ignore
