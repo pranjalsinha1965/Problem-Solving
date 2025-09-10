@@ -1,4 +1,5 @@
 import ctypes
+
 def allocate_memory(value): 
     ptr = ctypes.c_int(value)
     return ptr.value
@@ -63,7 +64,7 @@ def reverse_array(arr):
         reverse_array(arr[:-1])
     
 number = [1, 2, 3, 4, 5]
-reverse_array(number)
+reverse_array(number)    
 
 def permutations(s): 
     if len(s) == 0: 
