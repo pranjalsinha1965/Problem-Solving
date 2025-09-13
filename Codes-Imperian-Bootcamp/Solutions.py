@@ -172,7 +172,7 @@ class Solution:
             return copy
 
         # Start DFS from the given node
-        return dfs(node)
+        return dfs(node)    
 
 
 from typing import List 
@@ -439,7 +439,7 @@ def search(nums: List[int], target: int) -> int:
     return -1
 
 nums = [-1, 0, 3, 5, 9, 12]
-target = 9
+target = 9  
 
 result = search(nums, target)
 print(result)
