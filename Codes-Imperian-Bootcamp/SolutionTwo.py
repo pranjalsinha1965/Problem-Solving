@@ -1,3 +1,5 @@
+# Exaplin memory allocation using cell and block of memory ? Define dynamic array.
+
 import ctypes
 
 # Allocate single memory cell
