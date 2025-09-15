@@ -35,13 +35,27 @@ number = 10
 result = fill_block(allocate_block(number), number)
 print("Ctypes block:", [result[i] for i in range(number)])
 
-# Fibonacci
-def fibonacci(n): 
-    if n <= 1:
-        return n 
-    return fibonacci(n - 1) + fibonacci(n - 2)
+# fibonacci 
 
-print("Fibonacci(10):", fibonacci(10))
+def fibonacci(n): 
+    if n<= 1: 
+        return n
+    else: 
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    
+print("fibonacci(10): ", fibonacci(10))
+
+
+def fibonacci_iter(n):
+    if n <= 1:
+        return n
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+
+print("Fibonacci(10):", fibonacci_iter(10))  # Output: 55
+
 
 # Power function
 def power(base, exponent): 
