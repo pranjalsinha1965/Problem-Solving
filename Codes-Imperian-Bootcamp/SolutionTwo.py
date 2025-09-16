@@ -36,7 +36,6 @@ result = fill_block(allocate_block(number), number)
 print("Ctypes block:", [result[i] for i in range(number)])
 
 # fibonacci 
-
 def fibonacci(n): 
     if n<= 1: 
         return n
