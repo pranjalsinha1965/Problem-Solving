@@ -2,18 +2,6 @@
 from typing import List 
 class Solution: 
     def twoSum(self, numbers: List[int], target: int) -> List[int]: 
-        """
-        Problem: Two Sum II - Input Array is Sorted (LeetCode 167)
-        Approach:
-        - Use two pointers (left and right).
-        - If sum > target, move right pointer left.
-        - If sum < target, move left pointer right.
-        - If sum == target, return indices (+1 because the problem uses 1-based indexing).
-        Time Complexity: O(n)
-            - Each element is visited at most once by either left or right pointer.
-        Space Complexity: O(1)
-            - No extra data structures are used, just two pointers.
-        """
         l, r = 0, len(numbers) - 1   # Initialize left & right pointers
         while l < r: 
             curSum = numbers[l] + numbers[r]  # Sum of two current elements
@@ -38,20 +26,6 @@ print(f"Thus the answer is: {answer}")
 
 from typing import List 
 def maxArea(heights: List[int]) -> int:
-    """
-    Problem: Container With Most Water (LeetCode 11)
-    Approach:
-    - Use two pointers: one at the beginning (l) and one at the end (r).
-    - The area is determined by the shorter line * distance between l and r.
-    - Move the pointer pointing to the shorter line inward (since moving the taller one
-      won't help increase the area).
-    - Keep track of the maximum area found.
-    Time Complexity: O(n)
-        - Each index is visited at most once (either l++ or r-- per loop).
-        - No nested loops → linear scan.
-    Space Complexity: O(1)
-        - We only use a few variables (l, r, res) regardless of input size.
-    """
     # Initialize two pointers
     l, r = 0, len(heights) - 1
     res = 0   # To store the maximum area found
@@ -74,22 +48,6 @@ print(maxArea(heights))  # Expected output: 49
 from typing import List 
 
 def maxProfit(prices: List[int]) -> int:
-    """
-    Problem: Best Time to Buy and Sell Stock (LeetCode 121)
-
-    Approach:
-    - We need to maximize profit (sell price - buy price).
-    - Keep track of the lowest buying price seen so far.
-    - At each price, calculate potential profit (current price - min buy so far).
-    - Update max profit whenever we find a better one.
-
-    Time Complexity: O(n)
-        - We scan through the prices list once (single pass).
-        - Each operation inside the loop is O(1).
-    Space Complexity: O(1)
-        - Only two variables (buy, profit) are used regardless of input size.
-    """
-
     # Initialize with the first day's price as the first "buy"
     buy = prices[0]
 
@@ -114,64 +72,24 @@ result = maxProfit(prices)
 
 print(f"Maximum Profit: {result}")  # Expected output: 5
 
-
-# Clone Graph - Depth First Search - Leetcode 133
-# Clone Graph - LeetCode 133
-# Approach: Depth First Search (DFS) with HashMap to store visited nodes
-
 class Node:
     def __init__(self, val=0, neighbours=None):
         self.val = val
         self.neighbours = neighbours if neighbours is not None else []
 
-
 class Solution:
     def cloneGraph(self, node: 'Node') -> 'Node':
-        """
-        Problem:
-        Given a reference to a node in a connected undirected graph,
-        return a deep copy (clone) of the graph.
-
-        Approach:
-        - Use DFS to traverse the graph.
-        - Maintain a hashmap (oldToNew) to map original nodes → cloned nodes.
-        - For each node:
-            1. If already cloned, return the clone (to avoid cycles).
-            2. Otherwise, create a clone, store it in hashmap.
-            3. Recursively clone all neighbours.
-
-        Time Complexity: O(V + E)
-            - Each node (V) is visited once.
-            - Each edge (E) is explored once.
-        Space Complexity: O(V)
-            - HashMap stores one entry per node.
-            - DFS recursion stack can go up to O(V) in the worst case.
-        """
-
         if not node:
             return None
-
-        # HashMap: original node → cloned node
         oldToNew = {}
-
         def dfs(node):
-            # If node already cloned, return its clone
             if node in oldToNew:
                 return oldToNew[node]
-
-            # Create a clone of the current node
             copy = Node(node.val)
-
-            # Store it in the hashmap
             oldToNew[node] = copy
-
-            # Recursively clone neighbours
             for nei in node.neighbours:
                 copy.neighbours.append(dfs(nei))
-
             return copy
-
-        # Start DFS from the given node
         return dfs(node)    
 
 
@@ -179,22 +97,6 @@ from typing import List
 
 class Solution: 
     def rotateImage(self, matrix: List[List[int]]) -> None:
-        """
-        Problem:
-        Rotate an n x n 2D matrix by 90 degrees (clockwise), in-place.
-
-        Approach:
-        - Work layer by layer (from the outer square to the inner square).
-        - For each layer, rotate elements in groups of 4:
-          top → right → bottom → left → back to top.
-        - Swap elements in-place without using extra space.
-
-        Time Complexity: O(n^2)
-            - Each element is moved exactly once.
-            - For an n x n matrix, there are n^2 elements.
-        Space Complexity: O(1)
-            - Rotation is done in-place, no extra data structures are used.
-        """
 
         l, r = 0, len(matrix) - 1   # left and right boundaries of the current layer
 
@@ -202,23 +104,11 @@ class Solution:
         while l < r: 
             for i in range(r - l): 
                 top, bottom = l, r  # top and bottom row indices of current layer
-
-                # Save the top-left element (to move later)
                 topLeft = matrix[top][l + i]
-
-                # Move bottom-left → top-left
                 matrix[top][l + i] = matrix[bottom - i][l]
-
-                # Move bottom-right → bottom-left
                 matrix[bottom - i][l] = matrix[bottom][r - i]
-
-                # Move top-right → bottom-right
                 matrix[bottom][r - i] = matrix[top + i][r]
-
-                # Move saved top-left → top-right
                 matrix[top + i][r] = topLeft
-
-            # Move inward to next layer
             l += 1
             r -= 1
 
@@ -273,29 +163,6 @@ from collections import defaultdict
 
 class Solution: 
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        """
-        Problem:
-        Given an array of strings, group the anagrams together.
-
-        Approach:
-        - Instead of sorting strings (O(k log k)), we build a 26-length count array
-          for each word representing character frequencies.
-        - Convert the count array into a tuple (hashable) to use as a key in a hashmap.
-        - Group words with identical frequency counts together.
-
-        Time Complexity:
-            O(N * K) 
-            - N = number of strings
-            - K = maximum length of a string
-            - For each string, we count characters in O(K).
-            - Much faster than O(N * K log K) sorting approach.
-
-        Space Complexity:
-            O(N * K)
-            - Storing the result: all strings are stored once.
-            - Count array (size 26) reused per string → O(1) extra per word.
-        """
-
         res = defaultdict(list)  # map from charCount → list of anagrams
 
         for s in strs:
@@ -339,37 +206,6 @@ from typing import List
 
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        """
-        Problem:
-        You are given an integer array nums. Each element nums[i] represents 
-        the maximum jump length you can take from that position.
-        Return True if you can reach the last index, otherwise False.
-
-        Approach:
-        - Greedy algorithm (start from the end and check if you can reach it).
-        - Initialize goal = last index.
-        - Traverse the array backwards:
-            If from index i, you can jump to or beyond 'goal',
-            update 'goal' to i.
-        - At the end, if goal == 0, then we can reach the last index.
-
-        Example:
-            nums = [2,3,1,1,4]
-            goal starts at 4 (last index).
-            From i=3: 3+nums[3]=3+1 >= 4 → goal = 3
-            From i=2: 2+nums[2]=2+1 < 3 → no update
-            From i=1: 1+nums[1]=1+3 >= 3 → goal = 1
-            From i=0: 0+nums[0]=0+2 >= 1 → goal = 0
-            Since goal == 0 → return True
-
-        Time Complexity:
-            O(n), where n = length of nums.
-            - We scan the array once in reverse.
-        
-        Space Complexity:
-            O(1), constant space.
-            - Only goal variable is used (independent of input size).
-        """
 
         goal = len(nums) - 1  # start with last index as goal
         for i in range(len(nums) - 1, -1, -1):
