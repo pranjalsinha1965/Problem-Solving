@@ -205,7 +205,7 @@ class Solution:
 from typing import List
 
 class Solution:
-    def canJump(self, nums: List[int]) -> bool:
+    def canJump(self, nums: List[int]) -> bool: 
 
         goal = len(nums) - 1  # start with last index as goal
         for i in range(len(nums) - 1, -1, -1):
@@ -214,8 +214,6 @@ class Solution:
 
         return goal == 0  # if we can move goal all the way to start, return True
 
-
-# -------------------------
 # Example Usage
 nums = [2, 3, 1, 1, 4]
 solution = Solution()
