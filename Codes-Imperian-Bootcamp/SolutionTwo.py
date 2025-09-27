@@ -10,7 +10,7 @@ def modify_value(ptr, value):
     ptr.contents.value = value 
     return ptr.contents.value 
 
-ptr = allocate_memory(10)
+ptr = allocate_memory(10) 
 print("Before modify:", ptr.contents.value)
 print("After modify:", modify_value(ptr, 20))
 
@@ -19,7 +19,7 @@ def dynamic_array(n):
     return list(range(n))
 
 number = 10
-result = dynamic_array(number)
+result = dynamic_array(number) 
 print("Dynamic array:", result)
 
 # Allocate block of memory
