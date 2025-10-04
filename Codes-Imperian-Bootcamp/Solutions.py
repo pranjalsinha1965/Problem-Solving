@@ -16,6 +16,7 @@
 # note topics from kpmg ctf and study for the challenge 
 
 # Test - 1 Solutions
+# Easy 
 from typing import List 
 class Solution: 
     def twoSum(self, numbers: List[int], target: int) -> List[int]: 
@@ -41,6 +42,7 @@ print(f"The target result is: {target}")
 print(f"Thus the answer is: {answer}")
 
 
+# Easy 
 from typing import List 
 def maxArea(heights: List[int]) -> int:
     # Initialize two pointers
@@ -61,7 +63,7 @@ def maxArea(heights: List[int]) -> int:
 heights = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 print(maxArea(heights))  # Expected output: 49
 
-
+# Easy 
 from typing import List 
 
 def maxProfit(prices: List[int]) -> int:
@@ -89,6 +91,7 @@ result = maxProfit(prices)
 
 print(f"Maximum Profit: {result}")  # Expected output: 5
 
+# Medium 
 class Node:
     def __init__(self, val=0, neighbours=None):
         self.val = val
@@ -109,7 +112,7 @@ class Solution:
             return copy
         return dfs(node)    
 
-
+# Easy 
 from typing import List 
 
 class Solution: 
@@ -144,6 +147,7 @@ print(matrix)  # Expected: [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
 # Valid Anagram - Leetcode 242 - Python
 # type:ignore 
 # Valid Anagram - LeetCode 242
+# Medium 
 
 from collections import Counter
 
@@ -174,6 +178,7 @@ class Solution:
 
 # Group Anagrams - Leetcode 49
 # Approach: Categorize words by their character frequency (count array)
+# Medium 
 
 from typing import List
 from collections import defaultdict 
@@ -199,7 +204,7 @@ print(solution.groupAnagrams(strs))
 # Expected output:
 # [["eat","tea","ate"], ["tan","nat"], ["bat"]]
 
-
+# Easy 
 # Valid Parentheses  Stack  Leetcode 20  Python 
 # Done 
 # type:ignore
@@ -219,6 +224,7 @@ class Solution:
                 
         return True if not stack else False 
     
+# Easy 
 from typing import List
 
 class Solution:
@@ -236,7 +242,7 @@ nums = [2, 3, 1, 1, 4]
 solution = Solution()
 print(solution.canJump(nums))  # Output: True
 
-
+# Easy 
 def merge(self, intervals: List[List[int]]) -> List[List[int]]: 
     intervals.sort(key = lambda i: i[0])
     output = [intervals[0]]
@@ -276,6 +282,7 @@ customers = [5, 5, 5, 10, 20]
 result = lemonadeChange(None, customers)
 print(result)
 
+# Easy 
 def search(nums: List[int], target: int) -> int: 
     l, r = 0, len(nums) - 1
     while l < r: 
@@ -295,6 +302,7 @@ target = 9
 result = search(nums, target)
 print(result)
 
+# Easy 
 class ListNode: 
     def __init__(self, val = 0, next = None): 
         self.val = val
@@ -309,7 +317,8 @@ class Solution:
             if slow == fast: 
                 return True 
         return True 
-    
+
+# Easy 
 class Solution: 
     def reverseList(self, head:ListNode) -> ListNode: 
         if not head or not head.next: 
@@ -319,6 +328,7 @@ class Solution:
         head.next = None 
         return newHead 
 
+# Medium 
 class Solution: 
     def removeNthFromEnd(self, head:ListNode, n: int) -> ListNode: 
         dummy = ListNode(0, head)
@@ -336,7 +346,8 @@ class Solution:
 
         left.next = left.next.next 
         return dummy.next 
-    
+
+# Easy 
 class Solution: 
     def lengthOfLIS(nums: List[int]) -> int: 
         LIS = [1] * len(nums)
@@ -350,6 +361,7 @@ nums = [1, 2, 4, 5]
 result = Solution.lengthOfLIS(nums)
 print(f"The length of the longest increasing subsequence is: {result}")
 
+# Easy 
 def climbStairs(n: List[int]) -> int: 
     one, two = 1, 1
     for i in range(n - 1): 
@@ -361,6 +373,7 @@ def climbStairs(n: List[int]) -> int:
 n = 5 
 print(climbStairs(n))
 
+# Easy 
 def rob(self, nums: List[int]) -> int: 
     rob1, rob2 = 0, 0 
     for n in nums: 
@@ -380,6 +393,7 @@ def helper(self, nums: List[int]) -> int:
         rob2 = temp 
     return rob2 
 
+# Easy 
 def unique_paths(self, m: int, n: int) -> int: 
     row = [1] * n 
     for i in range(m - 1): 
@@ -389,6 +403,7 @@ def unique_paths(self, m: int, n: int) -> int:
         row = newRow 
     return row 
 
+# Hard 
 class Solution: 
     def coinChange(self, coins: List[int], amount: int) -> int: 
         self.result = float('-inf')
@@ -409,7 +424,7 @@ amount = 7
 my_solution = Solution()
 print(my_solution.coinChange(coins, amount))
 
-
+# Hard 
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]: 
         res = []
@@ -433,6 +448,7 @@ candidates = [2, 3, 4, 5, 7]
 target = 7 
 print(my_solution.combinationSum(candidates, target))
 
+# Easy 
 def lengthOfLIS(nums: List[int]) -> int: 
     LIS = [1] * len(nums)
     for i in range(len(nums) - 1, -1, -1):
@@ -445,6 +461,7 @@ nums = [1, 2, 4, 3]
 result = lengthOfLIS(nums)
 print(f"The length of the longest increasing subsequence us: {result}")
 
+# Esay 
 class Solution: 
     def longestCommonSubsequence(self, text1: str, text2: str) -> int: 
         dp = [[0 for _ in range(len(text2) + 1)] for _ in range(len(text1) + 1)]
@@ -463,6 +480,7 @@ text2 = "ace"
 result = Solution.longestCommonSubsequence(text1, text2)
 print(result)
 
+# Medium 
 class Solution: 
     def wordBreak(self, s: str, wordDict: List[str]) -> bool: 
         dp = [False] * (len(s) + 1)
@@ -480,6 +498,7 @@ s = "leetcode"
 wordDict = ["leet", "code"]
 print(solution.wordBreak(s, wordDict))
 
+# Medium 
 class Solution: 
     def lengthOfSubstring(self, s: str) -> int: 
         charSet = set()
@@ -494,6 +513,7 @@ class Solution:
             res = max(res, r - l + 1)
         return res 
 
+# Medium 
 class Solution: 
     def charactersReplacement(self, s: str, k : int) -> int: 
         count = ()
@@ -509,6 +529,7 @@ class Solution:
         res = max(res, r - l + 1)
         return res 
 
+# Medium 
 class Solution: 
     def countSubstrings(self, s: str) -> int: 
         for i in range(len(s)): 
@@ -524,7 +545,8 @@ class Solution:
             l -= 1 
             res += 1
         return res 
-    
+
+# Easy 
 class Solution: 
     def isHappy(n: int) -> bool: 
         def sum_of_squares(n): 
