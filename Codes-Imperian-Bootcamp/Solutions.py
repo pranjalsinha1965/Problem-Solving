@@ -41,7 +41,6 @@ print(f"Given list of integers is: {nums}")
 print(f"The target result is: {target}")
 print(f"Thus the answer is: {answer}")
 
-
 # Easy 
 from typing import List 
 def maxArea(heights: List[int]) -> int:
