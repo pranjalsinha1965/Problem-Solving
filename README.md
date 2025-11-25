@@ -257,67 +257,66 @@ Works only on monotonic conditions (sorted or yes/no search space).
 Narrow the range until the answer is found.
 Common pitfalls: overflow (mid = low + (high - low)/2), wrong boundaries, infinite loops.
 Easy LeetCode Problems:
-1️⃣ [Binary Search](https://lnkd.in/gS6HJ9sJ)
-2️⃣ [First Bad Version](https://lnkd.in/gYv94xhN)
-3️⃣ [Guess Number Higher or Lower](https://lnkd.in/gQxMFRuP)
-4️⃣ [Search Insert Position](https://lnkd.in/ghTEhu68)
-5️⃣ [Sqrt(x)](https://lnkd.in/grR6Qprg)
+1. 1️⃣ [Binary Search](https://lnkd.in/gS6HJ9sJ)
+2. 2️⃣ [First Bad Version](https://lnkd.in/gYv94xhN)
+3. 3️⃣ [Guess Number Higher or Lower](https://lnkd.in/gQxMFRuP)
+4. 4️⃣ [Search Insert Position](https://lnkd.in/ghTEhu68)
+5. 5️⃣ [Sqrt(x)](https://lnkd.in/grR6Qprg)
 
 ### 🔹 𝗦𝘁𝗲𝗽 𝟮: 𝗜𝗻𝘁𝗲𝗿𝗺𝗲𝗱𝗶𝗮𝘁𝗲 – 𝗕𝗶𝗻𝗮𝗿𝘆 𝗦𝗲𝗮𝗿𝗰𝗵 𝗩𝗮𝗿𝗶𝗮𝗻𝘁𝘀
 Boundaries – find leftmost/rightmost element.
 Rotated Arrays – binary search on two halves.
 Peak Finding – search in non-standard monotonic structures.
 Medium LeetCode Problems:
-1️⃣ [Find First and Last Position](https://lnkd.in/g3NuHzvM)
-2️⃣ [Search in Rotated Sorted Array](https://lnkd.in/gt8nYfs4)
-3️⃣ [Find Peak Element](https://lnkd.in/gXvQvugc)
-4️⃣ [Find Minimum in Rotated Sorted Array](https://lnkd.in/gTBiuc6x)
-5️⃣ [Koko Eating Bananas](https://lnkd.in/gCsaZ3hp)
+1. 1️⃣ [Find First and Last Position](https://lnkd.in/g3NuHzvM)
+2. 2️⃣ [Search in Rotated Sorted Array](https://lnkd.in/gt8nYfs4)
+3. 3️⃣ [Find Peak Element](https://lnkd.in/gXvQvugc)
+4. 4️⃣ [Find Minimum in Rotated Sorted Array](https://lnkd.in/gTBiuc6x)
+5. 5️⃣ [Koko Eating Bananas](https://lnkd.in/gCsaZ3hp)
 
 ### 🔹 𝗦𝘁𝗲𝗽 𝟯: 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 – 𝗕𝗶𝗻𝗮𝗿𝘆 𝗦𝗲𝗮𝗿𝗰𝗵 𝗼𝗻 𝗔𝗻𝘀𝘄𝗲𝗿𝘀
 Here, you’re not finding an index, but the optimal answer in a numeric or conceptual range (min/max resources, distance, capacity).
 Hard LeetCode Problems:
-1️⃣ [Median of Two Sorted Arrays](https://lnkd.in/g7dV4DcJ)
-2️⃣ [Split Array Largest Sum](https://lnkd.in/gxjnTK7m)
-3️⃣ [Aggressive Cows (GFG/LC variant)](https://lnkd.in/gqGF9KmH)
-4️⃣ [Capacity to Ship Packages](https://lnkd.in/gNcxa9nx)
-5️⃣ [K-th Smallest Pair Distance](https://lnkd.in/g4yAeSq8)
+1. 1️⃣ [Median of Two Sorted Arrays](https://lnkd.in/g7dV4DcJ)
+2. 2️⃣ [Split Array Largest Sum](https://lnkd.in/gxjnTK7m)
+3. 3️⃣ [Aggressive Cows (GFG/LC variant)](https://lnkd.in/gqGF9KmH)
+4. 4️⃣ [Capacity to Ship Packages](https://lnkd.in/gNcxa9nx)\
+5. 5️⃣ [K-th Smallest Pair Distance](https://lnkd.in/g4yAeSq8)
 
 ## 𝗧𝗵𝗲 𝗨𝗹𝘁𝗶𝗺𝗮𝘁𝗲 𝗖𝗣 𝗦𝘁𝗮𝗿𝘁𝗲𝗿 𝗣𝗮𝗰𝗸 🚀 | 𝗧𝗼𝗽 𝗧𝗼𝗽𝗶𝗰𝘀 + 𝗖𝗼𝗱𝗲𝗳𝗼𝗿𝗰es
 
 If you’re just getting into Competitive Programming, here’s a structured list of must-know topics with 5 beginner-friendly Codeforces problems (800–1200) for each.
 
 ### 🔹 𝗔𝗿𝗿𝗮𝘆𝘀 & 𝗣𝗿𝗲𝗳𝗶𝘅 𝗦𝘂𝗺𝘀
-https://lnkd.in/gcrZzUfE
-https://lnkd.in/gRytXvws
-https://lnkd.in/gE3CvGu4
-https://lnkd.in/gtNiPiGu
-https://lnkd.in/gdMxBrtK
+1. https://lnkd.in/gcrZzUfE
+2. https://lnkd.in/gRytXvws
+3. https://lnkd.in/gE3CvGu4
+4. https://lnkd.in/gtNiPiGu
+5. https://lnkd.in/gdMxBrtK
 
 ### 🔹 𝗦𝘁𝗿𝗶𝗻𝗴𝘀 & 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿 𝗙𝗿𝗲𝗾𝘂𝗲𝗻𝗰𝗶𝗲𝘀
-https://lnkd.in/g-ZG4bDC
-https://lnkd.in/g-K_edc5
-https://lnkd.in/gBHKD255
-https://lnkd.in/g6u6gQiQ
-https://lnkd.in/gQ7K5hey
+1. https://lnkd.in/g-ZG4bDC
+2. https://lnkd.in/g-K_edc5
+3. https://lnkd.in/gBHKD255
+4. https://lnkd.in/g6u6gQiQ
+5. https://lnkd.in/gQ7K5hey
 
 ### 🔹 𝗚𝗿𝗲𝗲𝗱𝘆 𝗔𝗽𝗽𝗿𝗼𝗮𝗰𝗵
-https://lnkd.in/g_fqqr7W
-https://lnkd.in/gf-s9699
-https://lnkd.in/gcn-VBwC
-https://lnkd.in/g_knaiWr
-https://lnkd.in/gA7kEQHj
+1. https://lnkd.in/g_fqqr7W
+2. https://lnkd.in/gf-s9699
+3. https://lnkd.in/gcn-VBwC
+4. https://lnkd.in/g_knaiWr
+5. https://lnkd.in/gA7kEQHj
 
 ### 🔹 𝗠𝗮𝘁𝗵 & 𝗡𝘂𝗺𝗯𝗲𝗿 𝗧𝗵𝗲𝗼𝗿𝘆 𝗕𝗮𝘀𝗶𝗰𝘀
-https://lnkd.in/geruwQGB
-https://lnkd.in/ga_MGran
-https://lnkd.in/gNX8_FDZ
-https://lnkd.in/gvWuMFHZ
-https://lnkd.in/gzVVVXpk
+1. https://lnkd.in/geruwQGB
+2. https://lnkd.in/ga_MGranhttps://lnkd.in/gNX8_FDZ
+3. https://lnkd.in/gvWuMFHZ
+4. https://lnkd.in/gzVVVXpk
 
 ### 🔹 𝗕𝗶𝗻𝗮𝗿𝘆 𝗦𝗲𝗮𝗿𝗰𝗵 / 𝗦𝗼𝗿𝘁𝗶𝗻𝗴 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀
-https://lnkd.in/gsP4T2xT
-https://lnkd.in/gZErP8rP
-https://lnkd.in/gqWAgUQD
-https://lnkd.in/gp7adNww
-https://lnkd.in/g6b7EptT
+1. https://lnkd.in/gsP4T2xT
+2. https://lnkd.in/gZErP8rP
+3. https://lnkd.in/gqWAgUQD
+4. https://lnkd.in/gp7adNww
+5. https://lnkd.in/g6b7EptT
