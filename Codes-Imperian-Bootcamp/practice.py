@@ -27,44 +27,22 @@
 # 10. Length of Increasing subsequence 
 # 11. wordbreak 
 # 12. combination Sum = Backtracking 
-# 13. House Robber 
-# 14. House Robber II 
+# 13. House Robber (Done)
+# 14. House Robber II (Done)
 # 15. Decode Ways - Dynamic Programming 
-# 16. Unique Paths - DP
-# 17. Clone Graph - DFS 
-# 18. Merge Intervals
-# 19. Reverse Linked List 
-# 20. Linked List Cycle 
-# 21. Rotate Image - Matrix 
-# 22. Longest Substring Without Repeating Characters 
-# 23. Longest Repeating Character Replacement 
-# 24. Valid Anagram 
-# 25. Gorup Anagrams 
-# 26. Valid Parenthesis 
-# 27. Longest Palindromic Substring 
-# 28. Palindromic Substrings 
-# 29. Encode and Decode Strings 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 16. Unique Paths - DP (Done)
+# 17. Can Jump - DP (Done)
+# 18. Clone Graph - DFS 
+# 19. Merge Intervals
+# 20. Reverse Linked List 
+# 21. Linked List Cycle 
+# 22. Rotate Image - Matrix 
+# 23. Longest Substring Without Repeating Characters 
+# 24. Longest Repeating Character Replacement 
+# 25. Valid Anagram 
+# 26. Gorup Anagrams 
+# 27. Valid Parenthesis 
+# 28. Longest Palindromic Substring 
+# 29. Palindromic Substrings 
+# 30. Encode and Decode Strings 
 
