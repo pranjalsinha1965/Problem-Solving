@@ -21,8 +21,8 @@
 # 4. Eating fresh lemonade change (Done)
 # 5. container with most water (Done)
 # 6. twoSum (Done)
-# 7. Combination Sum - Backtracking 
-# 8. climbStairs - Solution
+# 7. Combination Sum - Backtracking (Done)
+# 8. climbStairs - Solution (Done)
 # 9. Coin Change - Greedy ? 
 # 10. Length of Increasing subsequence 
 # 11. wordbreak 
@@ -44,6 +44,12 @@
 # 27. Longest Palindromic Substring 
 # 28. Palindromic Substrings 
 # 29. Encode and Decode Strings 
+
+
+
+
+
+
 
 
 
