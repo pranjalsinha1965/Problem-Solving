@@ -15,12 +15,12 @@
 
 # Matrix concept is very important practice them from the list only common for job interview only 
 
-# 1. Best time to buy and sell 
-# 2. Binary Search 
-# 3. Happy Number: Using Cycle Detection 
-# 4. Eating fresh lemonade change 
-# 5. container with most water 
-# 6. twoSum 
+# 1. Best time to buy and sell (Done)
+# 2. Binary Search (Done)
+# 3. Happy Number: Using Cycle Detection (Done)
+# 4. Eating fresh lemonade change (Done)
+# 5. container with most water (Done)
+# 6. twoSum (Done)
 # 7. Combination Sum - Backtracking 
 # 8. climbStairs - Solution
 # 9. Coin Change - Greedy ? 
@@ -44,6 +44,16 @@
 # 27. Longest Palindromic Substring 
 # 28. Palindromic Substrings 
 # 29. Encode and Decode Strings 
+
+
+
+
+
+
+
+
+
+
 
 
 
